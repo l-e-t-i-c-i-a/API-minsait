@@ -45,5 +45,24 @@ namespace API.Controllers
             var livros = _context.Livros.Where(x => x.Genero.Contains(genero));
             return Ok(livros);
         }
+
+        [HttpPut("{id}")]
+        public IActionResult Atualizar(int id, Livro livro)
+        {
+            var livroBanco = _context.Livros.Find(id);
+
+            if (livroBanco == null)
+                return NotFound();
+
+            livroBanco.Titulo = livro.Titulo;
+            livroBanco.Autor = livro.Autor;
+            livroBanco.Genero = livro.Genero;
+            livroBanco.Lido = livro.Lido;
+
+            _context.Livros.Update(livroBanco);
+            _context.SaveChanges();
+
+            return Ok(livroBanco);
+        }
     }
 }
