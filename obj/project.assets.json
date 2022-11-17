@@ -3690,11 +3690,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\saleg\\OneDrive\\Documentos\\uniesp\\treinamento\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\saleg\\OneDrive\\Documentos\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\saleg\\OneDrive\\Documentos\\uniesp\\treinamento\\API\\API.csproj",
+      "projectPath": "C:\\Users\\saleg\\OneDrive\\Documentos\\API\\API.csproj",
       "packagesPath": "C:\\Users\\saleg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\saleg\\OneDrive\\Documentos\\uniesp\\treinamento\\API\\obj\\",
+      "outputPath": "C:\\Users\\saleg\\OneDrive\\Documentos\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\saleg\\AppData\\Roaming\\NuGet\\NuGet.Config"

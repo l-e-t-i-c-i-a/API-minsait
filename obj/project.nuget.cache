@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EeQWSSLmAggaTklN8E2tuPjZPYb0Lndck+hjDGqIOINXDfszqHBEtXyO6nAMd/UrTxmpycErA9aJwKbXIBpDBw==",
+  "dgSpecHash": "uWFTspLIDMMZ+ZjNypPISRT6LNQpIVkwCi5/oZrSLmsMwiPS+W9g2ChVMOvax7oobCNvIAT08Shp02tfQNIyxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\saleg\\OneDrive\\Documentos\\uniesp\\treinamento\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\saleg\\OneDrive\\Documentos\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saleg\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\saleg\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
