@@ -64,5 +64,19 @@ namespace API.Controllers
 
             return Ok(livroBanco);
         }
+
+        [HttpDelete("{id}")]
+        public IActionResult Deletar(int id)
+        {
+            var livroBanco = _context.Livros.Find(id);
+
+            if (livroBanco == null)
+                return NotFound();
+
+            _context.Livros.Remove(livroBanco);
+            _context.SaveChanges();
+
+            return NoContent();
+        }
     }
 }
