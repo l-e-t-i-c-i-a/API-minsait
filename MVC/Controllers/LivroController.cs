@@ -22,6 +22,24 @@ namespace MVC.Controllers
             var livros = _context.Livros.ToList();
             return View(livros);
         }
-        
+
+        public IActionResult Criar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Criar(Livro livro)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Livros.Add(livro);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(livro);
+        }
+
     }
 }

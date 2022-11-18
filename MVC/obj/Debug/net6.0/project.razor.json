@@ -16333,6 +16333,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\saleg\\OneDrive\\Documentos\\API\\MVC\\Views\\Livro\\Criar.cshtml",
+      "TargetPath": "Views\\Livro\\Criar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\saleg\\OneDrive\\Documentos\\API\\MVC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
