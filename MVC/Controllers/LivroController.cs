@@ -40,6 +40,32 @@ namespace MVC.Controllers
 
             return View(livro);
         }
+        
+        public IActionResult Editar(int id)
+        {
+            var livro = _context.Livros.Find(id);
+
+            if (livro == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(livro);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Livro livro)
+        {
+            var livroBanco = _context.Livros.Find(livro.Id);
+
+            livroBanco.Titulo = livro.Titulo;
+            livroBanco.Autor = livro.Autor;
+            livroBanco.Genero = livro.Genero;
+            livroBanco.Lido = livro.Lido;
+
+            _context.Livros.Update(livroBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
 
     }
 }
