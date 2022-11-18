@@ -77,5 +77,26 @@ namespace MVC.Controllers
             return View(livro);
         }
 
+        public IActionResult Deletar(int id)
+        {
+            var livro = _context.Livros.Find(id);
+
+            if (livro == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(livro);
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(Livro livro)
+        {
+            var livroBanco = _context.Livros.Find(livro.Id);
+
+            _context.Livros.Remove(livroBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }
