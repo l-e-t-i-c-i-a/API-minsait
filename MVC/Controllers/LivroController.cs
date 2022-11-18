@@ -67,5 +67,15 @@ namespace MVC.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public IActionResult Detalhes(int id)
+        {
+            var livro = _context.Livros.Find(id);
+
+            if (livro == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(livro);
+        }
+
     }
 }
